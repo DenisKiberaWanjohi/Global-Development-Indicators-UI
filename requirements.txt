@@ -9,3 +9,4 @@ google-auth
 pandas
 numpy
 altair
+google-cloud-bigquery
