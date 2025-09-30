@@ -5,6 +5,20 @@ This project demonstrates how to combine open data and modern UI frameworks to d
 
 ---
 
+## 🗂️ Architecture Overview
+
+```mermaid
+flowchart LR
+    A[Google BigQuery Public Dataset] -->|SQL Query| B[Pandas DataFrame]
+    B --> C[Data Processing & Metrics]
+    C --> D[Plotly Express Visualizations]
+    C --> E[Scorecards & Automated Summaries]
+    D --> F[Streamlit App UI]
+    E --> F[Streamlit App UI]
+    F --> G[End User Browser]
+
+---
+
 ## 📊 Data Source
 
 The dashboard uses the **World Bank World Development Indicators** dataset from **BigQuery Public Data**:
@@ -15,8 +29,6 @@ The dashboard uses the **World Bank World Development Indicators** dataset from 
 - **Life expectancy at birth (years)**  
 - **School enrollment, primary (% gross)**  
 - **Urban population (% of total population)**  
-
-Data is queried directly from BigQuery, ensuring access to reliable and up-to-date global development statistics.
 
 ---
 
@@ -51,7 +63,7 @@ Data is queried directly from BigQuery, ensuring access to reliable and up-to-da
 
 This dashboard shows how open data and modern Python tools can:
 
-- Deliver **high-level insights** for analysts or decision-makers.  
+- Deliver **high-level insights** for decision-makers.  
 - Replace manual reporting with **automated, interactive analysis**.  
 - Empower analysts to explore **economic, social, and environmental trends** without needing a heavy BI platform.  
 - Enhance transparency by showing **data coverage and quality** alongside metrics.  
@@ -68,9 +80,11 @@ This dashboard shows how open data and modern Python tools can:
 
 ---
 
-## ▶️ Running the App
+## ▶️ Access the Dashboard
 
-1. **Clone this repo**
-   ```bash
-   git clone https://github.com/your-username/global-dev-dashboard.git
-   cd global-dev-dashboard
+👉 You can access the live UI here:  
+[**Global Development Indicators Dashboard**](https://global-development-indicators-ui.streamlit.app/)
+
+---
+
+
