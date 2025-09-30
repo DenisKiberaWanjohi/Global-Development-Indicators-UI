@@ -5,6 +5,13 @@ This project demonstrates how to combine open data and modern UI frameworks to d
 
 ---
 
+## ▶️ Access the Dashboard
+
+👉 You can access the live UI here:  
+[**Global Development Indicators Dashboard**](https://global-development-indicators-ui.streamlit.app/)
+
+---
+
 ## 📊 Data Source
 
 The dashboard uses the **World Bank World Development Indicators** dataset from **BigQuery Public Data**:
@@ -63,13 +70,6 @@ This dashboard shows how open data and modern Python tools can:
 - **Plotly Express** – charts and maps  
 - **Pandas** – data wrangling  
 - **Google BigQuery** – public dataset sourcing  
-
----
-
-## ▶️ Access the Dashboard
-
-👉 You can access the live UI here:  
-[**Global Development Indicators Dashboard**](https://global-development-indicators-ui.streamlit.app/)
 
 ---
 
