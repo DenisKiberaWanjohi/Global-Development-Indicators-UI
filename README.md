@@ -30,7 +30,6 @@ The dashboard uses the **World Bank World Development Indicators** dataset from 
 ### 🔎 Filters
 - Top-row filters for **countries** and **year range** (calendar selector).  
 - Multi-select columns for exporting data.  
-- Defaults set to **all countries** and **2010–2015** for ease of exploration.  
 
 ### 📈 Visualizations
 - **Economic indicators**: GDP per capita trends, population totals.  
