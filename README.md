@@ -5,20 +5,6 @@ This project demonstrates how to combine open data and modern UI frameworks to d
 
 ---
 
-## 🗂️ Architecture Overview
-
-```mermaid
-flowchart LR
-    A[Google BigQuery Public Dataset] -->|SQL Query| B[Pandas DataFrame]
-    B --> C[Data Processing & Metrics]
-    C --> D[Plotly Express Visualizations]
-    C --> E[Scorecards & Automated Summaries]
-    D --> F[Streamlit App UI]
-    E --> F[Streamlit App UI]
-    F --> G[End User Browser]
-
----
-
 ## 📊 Data Source
 
 The dashboard uses the **World Bank World Development Indicators** dataset from **BigQuery Public Data**:
