@@ -1,85 +1,76 @@
-🌍 Global Development Indicators Dashboard
+# 🌍 Global Development Indicators Dashboard
 
-An interactive analytics dashboard built with Streamlit and Plotly, powered by Google BigQuery Public Datasets.
+An interactive analytics dashboard built with **Streamlit** and **Plotly**, powered by **Google BigQuery Public Datasets**.  
 This project demonstrates how to combine open data and modern UI frameworks to deliver insights similar to Tableau or Power BI, but fully in Python.
 
-📊 Data Source
+---
 
-The dashboard uses the World Bank World Development Indicators dataset from BigQuery Public Data:
+## 📊 Data Source
 
-GDP per capita (current US$)
+The dashboard uses the **World Bank World Development Indicators** dataset from **BigQuery Public Data**:
 
-Population, total
+- **GDP per capita (current US$)**  
+- **Population, total**  
+- **CO₂ emissions (metric tons per capita)**  
+- **Life expectancy at birth (years)**  
+- **School enrollment, primary (% gross)**  
+- **Urban population (% of total population)**  
 
-CO₂ emissions (metric tons per capita)
+Data is queried directly from BigQuery, ensuring access to reliable and up-to-date global development statistics.
 
-Life expectancy at birth (years)
+---
 
-School enrollment, primary (% gross)
+## 💻 Features
 
-Urban population (% of total population)
+### 🔎 Filters
+- Top-row filters for **countries** and **year range** (calendar selector).  
+- Multi-select columns for exporting data.  
+- Defaults set to **all countries** and **2010–2015** for ease of exploration.  
 
-Querying is done directly from BigQuery, ensuring access to reliable and up-to-date global development statistics.
+### 📈 Visualizations
+- **Economic indicators**: GDP per capita trends, population totals.  
+- **Social indicators**: Life expectancy, school enrollment, urbanization.  
+- **Environmental indicators**: CO₂ emissions per capita trends and choropleth maps.  
+- **Comparison view**: Select any indicator and year to compare across countries with side-by-side bar charts and maps.  
+- **Automated Summaries**: Narrative insights generated from the data, highlighting leaders, laggards, and growth patterns.  
 
-💻 Features
-🔎 Filters
+### 🧾 Executive Scorecards
+- Averages across selected countries.  
+- Gaps between highest and lowest performers.  
+- Growth rates (CAGR) for GDP and population.  
+- Leaders in GDP growth, life expectancy improvement, and CO₂ reduction.  
+- Transparent data quality coverage per indicator.  
 
-Top-row filters for countries and year range (calendar selector).
+### 📥 Data Export
+- Export filtered data in **CSV** or **Excel** format.  
+- Filenames dynamically reflect selected countries and years for traceability.  
 
-Multi-select columns for exporting data.
+---
 
-Defaults set to all countries and 2010–2015 for ease of exploration.
+## 🚀 Impact
 
-📈 Visualizations
+This dashboard shows how open data and modern Python tools can:
 
-Economic indicators: GDP per capita trends, population totals.
+- Deliver **high-level insights** for analysts or decision-makers.  
+- Replace manual reporting with **automated, interactive analysis**.  
+- Empower analysts to explore **economic, social, and environmental trends** without needing a heavy BI platform.  
+- Enhance transparency by showing **data coverage and quality** alongside metrics.  
 
-Social indicators: Life expectancy, school enrollment, urbanization.
+---
 
-Environmental indicators: CO₂ emissions per capita trends and choropleth maps.
+## 🛠️ Tech Stack
 
-Comparison view: Select any indicator and year to compare across countries with side-by-side bar charts and maps.
+- **Python**  
+- **Streamlit** – interactive UI  
+- **Plotly Express** – charts and maps  
+- **Pandas** – data wrangling  
+- **Google BigQuery** – public dataset sourcing  
 
-Automated Summaries: Narrative insights generated from the data, highlighting leaders, laggards, and growth patterns.
+---
 
-🧾 Executive Scorecards
+## ▶️ Running the App
 
-Average values across countries.
-
-Gaps between highest and lowest performers.
-
-Growth rates (CAGR) for GDP and population.
-
-Leaders in GDP growth, life expectancy improvement, and CO₂ reduction.
-
-Transparent data quality coverage per indicator.
-
-📥 Data Export
-
-Export filtered data in CSV or Excel format.
-
-Filenames dynamically reflect selected countries and years for traceability.
-
-🚀 Impact
-
-This dashboard demonstrates how open data and modern Python tools can:
-
-Deliver high-level insights for decision-makers.
-
-Replace manual reporting with automated, interactive analysis.
-
-Empower analysts to dive into economic, social, and environmental trends without needing a heavy BI platform.
-
-Enhance transparency by showing data coverage and quality alongside metrics.
-
-🛠️ Tech Stack
-
-Python
-
-Streamlit for interactive UI
-
-Plotly Express for rich, interactive charts and maps
-
-Pandas for data wrangling
-
-Google BigQuery (Public Dataset) for data sourcing
+1. **Clone this repo**
+   ```bash
+   git clone https://github.com/your-username/global-dev-dashboard.git
+   cd global-dev-dashboard
