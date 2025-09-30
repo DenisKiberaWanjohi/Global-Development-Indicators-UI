@@ -12,3 +12,5 @@ altair
 google-cloud-bigquery
 db-dtypes
 openpyxl
+plotly
+xlsxwriter
